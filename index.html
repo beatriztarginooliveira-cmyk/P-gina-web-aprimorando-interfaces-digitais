@@ -35,15 +35,97 @@
                 <li><strong>Pequenos gestos:</strong> Pratique a gentileza no ambiente escolar, profissional e familiar.</li>
             </ul>
         </div>
+        
+/* Resete básico e definições globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-        <div class="card links-section">
-            <p>Explore recursos para aprofundar seu conhecimento:</p>
-            <a href="https://pt.wikipedia.org/wiki/Empatia" target="_blank" class="btn-link">O que é Empatia?</a>
-            <a href="https://pt.wikipedia.org/wiki/Cooperação" target="_blank" class="btn-link">Conceito de Cooperação</a>
-        </div>
+body {
+    background-color: #f0f4f8;
+    color: #2c3e50;
+    line-height: 1.6;
+    padding-bottom: 40px;
+}
 
-    </div>
+/* Estilização do Cabeçalho */
+.header {
+    background: linear-gradient(135deg, #2b5876, #4e4376);
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
+.header h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+/* Container principal para centralizar o conteúdo */
+.main-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilo dos blocos/cards de conteúdo */
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #4e4376;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+}
+
+/* Card destacado para a lista */
+.card.highlighted {
+    border-left-color: #ff7e5f;
+}
+
+/* Estilização da lista */
+ul {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+li {
+    background-color: #f8f9fa;
+    margin-bottom: 10px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+/* Estilização dos Links */
+.links-section {
+    text-align: center;
+}
+
+.btn-link {
+    display: inline-block;
+    background-color: #2b5876;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px 5px 0 5px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-link:hover {
+    background-color: #ff7e5f;
+}
 </body>
 </html>                                
     
