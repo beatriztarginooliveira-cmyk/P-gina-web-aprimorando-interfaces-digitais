@@ -3,88 +3,189 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Empatia & Conexão Humana</title>
+  <title>Empatia & Compreensão</title>
   <style>
+    /* Reset e Variáveis Globais */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     :root {
-      --bg-color: #07d0d4;
+      --bg-gradient: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
       --card-bg: #ffffff;
-      --primary-color: #4a90e2;
-      --text-color: #333333;
-      --accent-color: #020000;
+      --primary-color: #e06666;
+      --primary-hover: #cc5252;
+      --text-main: #2c3e50;
+      --text-muted: #666666;
+      --accent-soft: #f4ece1;
+      --shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+      --radius: 16px;
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
-      margin: 0;
-      padding: 0;
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--bg-gradient);
+      color: var(--text-main);
+      line-height: 1.6;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
+      justify-content: center;
       min-height: 100vh;
+      padding: 20px;
     }
 
-    .container {
-      max-width: 600px;
+    /* Container Principal */
+    .card {
       background: var(--card-bg);
-      padding: 2.5rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      max-width: 600px;
+      width: 100%;
+      padding: 40px;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
       text-align: center;
-      margin: 1rem;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--accent-soft);
+      color: #8a6d3b;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 6px 16px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
     h1 {
-      color: var(--primary-color);
-      font-size: 2rem;
-      margin-bottom: 1rem;
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--text-main);
     }
 
     p {
-      line-height: 1.6;
-      font-size: 1.05rem;
-      color: #555555;
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 24px;
     }
 
-    .highlight {
-      font-weight: bold;
-      color: var(--accent-color);
-    }
-
-    .quote-box {
-      margin-top: 2rem;
-      padding: 1.2rem;
-      border-left: 4px solid var(--primary-color);
-      background-color: #f9f9f9;
+    blockquote {
       font-style: italic;
+      background: #fafafa;
+      border-left: 4px solid var(--primary-color);
+      padding: 16px 20px;
+      margin: 20px 0;
+      border-radius: 0 var(--radius) var(--radius) 0;
       text-align: left;
+      color: #444;
+    }
+
+    /* Botão e Contador */
+    .actions {
+      margin-top: 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .like-btn {
+      background-color: var(--primary-color);
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 30px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.2s ease-in-out;
+      box-shadow: 0 4px 15px rgba(224, 102, 102, 0.3);
+    }
+
+    .like-btn:hover {
+      background-color: var(--primary-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(224, 102, 102, 0.4);
+    }
+
+    .like-btn:active {
+      transform: translateY(0);
+    }
+
+    .heart-icon {
+      font-size: 1.3rem;
+    }
+
+    .counter-text {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .counter-text span {
+      font-weight: bold;
+      color: var(--text-main);
+    }
+
+    /* Rodapé */
+    footer {
+      margin-top: 30px;
+      font-size: 0.85rem;
+      color: var(--text-muted);
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <h1>Empatia</h1>
-
-    <p>Empatia é a capacidade de se colocar no lugar de outra pessoa, entendendo o que ela sente ou pensa sem julgar. É escutar com atenção e tentar ver o mundo pelo ponto de vista do outro, criando uma conexão real de respeito.</p>
-
-    <h2>Tipos de Empatias</h2>
-
-    <p>Cognitiva: Entender a mente e a visão do outro de forma racional.</p>
-
-    <p>Emocional: Sentir no próprio corpo uma parte da dor ou da alegria alheia.</p>
-  
-    <p>Compassiva: Passar do sentimento para a ação para ajudar o próximo, permitindo construir laços mais profundos e transformar relacionamentos cotidianos.</p>
+  <main class="card">
+    <span class="badge">Conexão Humana</span>
+    <h1>A Arte da Empatia</h1>
     
+    <p>Empatia é a capacidade de se colocar no lugar do outro, de ouvir sem julgar e de tentar compreender as dores, alegrias e perspectivas de quem está ao nosso lado.</p>
+    
+    Quote em destaque -->
+    <blockquote>
+      "Quando você escuta com empatia, você dá à outra pessoa espaço psicológico para respirar."
+    </blockquote>
 
-      
-    <div class="quote-box">
-      "Ver com os olhos de outro, ouvir com os ouvidos de outro e sentir com o coração de outro."
+    <p>Compreender não significa necessariamente concordar com tudo, mas sim reconhecer que a experiência do outro é válida e merece respeito.</p>
+
+    <div class="actions">
+      <button class="like-btn" id="likeButton" onclick="addLike()">
+        <span class="heart-icon">❤️</span> Demonstrar Empatia
+      </button>
+      <div class="counter-text">
+        <span id="likeCount">0</span> pessoas se conectaram com esta mensagem.
+      </div>
     </div>
-    <button>🩷​ <span>0</span></button>
-    <button>👍 <span>0</span></button>
-  </div>
+  </main>
+
+  <footer>
+    Desenvolvido com foco em empatia e respeito.
+  </footer>
+
+  <script>
+    let count = 0;
+
+    function addLike() {
+      count++;
+      document.getElementById('likeCount').textContent = count;
+      
+      // Pequena animação no botão
+      const btn = document.getElementById('likeButton');
+      btn.style.transform = 'scale(1.05)';
+      setTimeout(() => {
+        btn.style.transform = 'scale(1)';
+      }, 150);
+    }
+  </script>
 
 </body>
 </html>
