@@ -1,12 +1,12 @@
 
- // Lógica do Contador de Likes
+
     let likes = 0;
 
     function registerLike() {
       likes++;
       document.getElementById('likeCount').textContent = likes;
 
-      // Animação visual no botão
+
       const btn = document.getElementById('likeBtn');
       btn.style.transform = 'scale(1.1)';
       setTimeout(() => {
@@ -14,7 +14,7 @@
       }, 150);
     }
 
-    // Lógica para adicionar mensagens curtas
+
     function addMessage() {
       const input = document.getElementById('userThought');
       const text = input.value.trim();

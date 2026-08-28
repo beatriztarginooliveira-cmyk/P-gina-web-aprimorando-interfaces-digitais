@@ -1,4 +1,4 @@
- /* Reset e Variáveis Globais */
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -29,7 +29,7 @@
       justify-content: center;
     }
 
-    /* Layout da Página */
+
     .container {
       max-width: 900px;
       width: 100%;
@@ -38,7 +38,7 @@
       gap: 30px;
     }
 
-    /* Cabeçalho / Hero */
+
     header.hero {
       background: var(--card-bg);
       padding: 50px 40px;
@@ -87,7 +87,7 @@
       margin: 0 auto;
     }
 
-    /* Grid de Conteúdo */
+
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -123,7 +123,7 @@
       font-size: 1rem;
     }
 
-    /* Citação Expandida */
+
     .quote-box {
       background: linear-gradient(135deg, #2d3436 0%, #1e272e 100%);
       color: #ffffff;
@@ -147,7 +147,7 @@
       font-weight: 600;
     }
 
-    /* Seção Interativa / Contador e Mensagem */
+ 
     .interactive-section {
       background: var(--card-bg);
       padding: 40px;
@@ -203,7 +203,7 @@
       font-size: 1.2rem;
     }
 
-    /* Área de Reflexão Rápida */
+  
     .reflection-form {
       margin-top: 30px;
       padding-top: 30px;
@@ -254,7 +254,6 @@
       text-align: left;
     }
 
-    /* Rodapé */
     footer {
       text-align: center;
       padding: 20px 0;
